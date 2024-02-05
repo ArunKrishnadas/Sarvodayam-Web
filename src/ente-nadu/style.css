@@ -5,6 +5,8 @@
     background-repeat: no-repeat !important;
     background-size: 100%;
     background-position: center !important;
+    position: static;
+    overflow: hidden;
 
 }
 
@@ -169,3 +171,73 @@ button {
   button:hover .arrow:before {
     right: 0;
   }
+
+  .form-container{
+    background-color: #98FB98;
+    min-width: 100%;
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .registeration-container{
+    background-color: aqua;
+  }
+
+
+
+ /* Common styles for all screen sizes */
+.form-group {
+    margin-bottom: 15px;
+  }
+  
+  .custom-input {
+    width: 100%;
+  }
+  
+  /* Optional: Style for better visual clarity */
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  
+  .form-group.col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  .en-upload-file {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  /* Additional styles based on your form structure */
+  #runFirmCheckboxdiv {
+    margin-top: 15px;
+  }
+  
+  /* Mobile view styles */
+  @media only screen and (max-width: 767px) {
+    .form-group.col-md-6 {
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding-right: 0;
+      padding-left: 0;
+    }
+  
+    /* Add more mobile-specific styles as needed */
+  }
+  
